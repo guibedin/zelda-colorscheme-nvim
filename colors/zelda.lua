@@ -37,7 +37,6 @@ local c = {
   -- Zelda palette
   comment      = '#494b4b',
   keyword      = '#0d9263',
-  func         = '#0d9263',
   string       = '#4aba91',
   type         = '#d4ce46',
   constant     = '#d4ce46',
@@ -145,7 +144,7 @@ hi('Boolean',             { fg = c.constant })
 hi('Float',               { fg = c.constant })
 
 hi('Identifier',          { fg = c.fg })
-hi('Function',            { fg = c.func })
+hi('Function',            { fg = c.hylian })
 
 hi('Statement',           { fg = c.keyword, bold = true })
 hi('Conditional',         { fg = c.keyword })
@@ -223,11 +222,11 @@ hi('@type.definition',        { link = 'Typedef' })
 
 -- Functions
 hi('@function',               { link = 'Function' })
-hi('@function.builtin',       { fg = c.special })
-hi('@function.call',          { fg = c.func })
+hi('@function.builtin',       { fg = c.hylian })
+hi('@function.call',          { fg = c.hylian })
 hi('@function.macro',         { link = 'Macro' })
-hi('@function.method',        { fg = c.func })
-hi('@function.method.call',   { fg = c.func })
+hi('@function.method',        { fg = c.hylian })
+hi('@function.method.call',   { fg = c.hylian })
 hi('@constructor',            { fg = c.type })
 
 -- Variables
@@ -235,10 +234,10 @@ hi('@variable',               { fg = c.fg })
 hi('@variable.builtin',       { fg = c.red, italic = true })
 hi('@variable.parameter',     { fg = c.orange, italic = true })
 hi('@variable.parameter.builtin', { fg = c.orange, italic = true })
-hi('@variable.member',        { fg = c.func })
+hi('@variable.member',        { fg = c.hylian })
 
 -- Properties
-hi('@property',               { fg = c.func })
+hi('@property',               { fg = c.hylian })
 
 -- Keywords
 hi('@keyword',                { link = 'Keyword' })
@@ -278,7 +277,7 @@ hi('@module.builtin',         { fg = c.special })
 -- Tags (HTML)
 hi('@tag',                    { fg = c.keyword })
 hi('@tag.builtin',            { fg = c.keyword })
-hi('@tag.attribute',          { fg = c.func })
+hi('@tag.attribute',          { fg = c.hylian })
 hi('@tag.delimiter',          { fg = c.fg_dim })
 
 -- Markup (Markdown)
@@ -291,7 +290,7 @@ hi('@markup.heading',         { fg = c.type, bold = true })
 hi('@markup.heading.1',       { fg = c.type, bold = true })
 hi('@markup.heading.2',       { fg = c.string, bold = true })
 hi('@markup.heading.3',       { fg = c.keyword, bold = true })
-hi('@markup.heading.4',       { fg = c.func, bold = true })
+hi('@markup.heading.4',       { fg = c.blue, bold = true })
 hi('@markup.heading.5',       { fg = c.fg_dim, bold = true })
 hi('@markup.heading.6',       { fg = c.fg_dim, bold = true })
 hi('@markup.quote',           { fg = c.fg_dim, italic = true })

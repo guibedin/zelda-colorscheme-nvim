@@ -45,8 +45,8 @@ local user_symbol="%(!:${ZELDA_RED}%n:${ZELDA_GREEN}%n)${ZELDA_RESET}"
 local directory="${ZELDA_HYLIAN}%~${ZELDA_RESET}"
 
 # Assemble prompt with triforce
-PROMPT='${user_symbol}${ZELDA_GREEN}:${ZELDA_RESET}${directory}$(git_prompt_info) ${ZELDA_YELLOW}▲${ZELDA_RESET}
-> '
+PROMPT='${user_symbol}${ZELDA_GREEN}:${ZELDA_RESET}${directory}${ZELDA_RED}$(git_prompt_info) 
+${TRIFORCE} '
 
 # Right prompt: timestamp
 RPROMPT='${ZELDA_COMMENT}[%*]${ZELDA_RESET}'
