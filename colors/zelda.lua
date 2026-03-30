@@ -47,6 +47,7 @@ local c = {
   red          = '#e06060',
   orange       = '#d4a040',
   blue         = '#5898b8',
+  hylian       = '#5b8dc8',
   cyan         = '#4aba91',
   purple       = '#a080c0',
   border       = '#2a2a30',
@@ -86,7 +87,7 @@ hi('EndOfBuffer',         { link = 'NonText' })
 hi('SpecialKey',          { fg = c.blue })
 hi('Conceal',             { fg = c.fg_dim })
 hi('Title',               { fg = c.type, bold = true })
-hi('Directory',           { fg = c.string })
+hi('Directory',           { fg = c.hylian })
 
 hi('StatusLine',          { fg = c.fg, bg = c.bg_dark })
 hi('StatusLineNC',        { fg = c.fg_dim, bg = c.bg_dark })
@@ -295,9 +296,9 @@ hi('@markup.heading.5',       { fg = c.fg_dim, bold = true })
 hi('@markup.heading.6',       { fg = c.fg_dim, bold = true })
 hi('@markup.quote',           { fg = c.fg_dim, italic = true })
 hi('@markup.math',            { fg = c.special })
-hi('@markup.link',            { fg = c.blue, underline = true })
-hi('@markup.link.label',      { fg = c.blue })
-hi('@markup.link.url',        { fg = c.blue, underline = true })
+hi('@markup.link',            { fg = c.hylian, underline = true })
+hi('@markup.link.label',      { fg = c.hylian })
+hi('@markup.link.url',        { fg = c.hylian, underline = true })
 hi('@markup.raw',             { fg = c.string })
 hi('@markup.raw.block',       { fg = c.string })
 hi('@markup.list',            { fg = c.keyword })
@@ -314,7 +315,7 @@ hi('@diff.delta',             { link = 'Changed' })
 -- ============================================================
 hi('DiagnosticError',               { fg = c.red })
 hi('DiagnosticWarn',                { fg = c.orange })
-hi('DiagnosticInfo',                { fg = c.blue })
+hi('DiagnosticInfo',                { fg = c.hylian })
 hi('DiagnosticHint',                { fg = c.special })
 hi('DiagnosticOk',                  { fg = c.string })
 
@@ -338,7 +339,7 @@ hi('DiagnosticSignOk',              { link = 'DiagnosticOk' })
 
 hi('DiagnosticUnderlineError',      { sp = c.red, undercurl = true })
 hi('DiagnosticUnderlineWarn',       { sp = c.orange, undercurl = true })
-hi('DiagnosticUnderlineInfo',       { sp = c.blue, undercurl = true })
+hi('DiagnosticUnderlineInfo',       { sp = c.hylian, undercurl = true })
 hi('DiagnosticUnderlineHint',       { sp = c.special, undercurl = true })
 hi('DiagnosticUnderlineOk',         { sp = c.string, undercurl = true })
 
@@ -376,7 +377,7 @@ vim.g.terminal_color_0  = c.bg_dark
 vim.g.terminal_color_1  = c.red
 vim.g.terminal_color_2  = c.string
 vim.g.terminal_color_3  = c.type
-vim.g.terminal_color_4  = c.blue
+vim.g.terminal_color_4  = c.hylian
 vim.g.terminal_color_5  = c.purple
 vim.g.terminal_color_6  = c.cyan
 vim.g.terminal_color_7  = c.fg_dim
@@ -384,7 +385,7 @@ vim.g.terminal_color_8  = c.comment
 vim.g.terminal_color_9  = c.red
 vim.g.terminal_color_10 = c.string
 vim.g.terminal_color_11 = c.type
-vim.g.terminal_color_12 = c.blue
+vim.g.terminal_color_12 = c.hylian
 vim.g.terminal_color_13 = c.purple
 vim.g.terminal_color_14 = c.cyan
 vim.g.terminal_color_15 = c.fg
